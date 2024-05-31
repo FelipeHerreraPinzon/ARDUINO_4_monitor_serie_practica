@@ -1,0 +1,25 @@
+int i = 0;
+int wait = 500;
+int x = 1;
+int y = 7;
+String igual = " = ";
+String mas = " + ";
+
+void setup() {
+  // put your setup code here, to run once:
+   Serial.begin(9600);
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+
+int z = x + y;
+
+    Serial.print(x);
+    Serial.print(mas);
+    Serial.print(y);
+    Serial.print(igual);
+    Serial.println(z);
+delay(wait);
+i=i+1;
+}
